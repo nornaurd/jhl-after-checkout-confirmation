@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body data-page="signup">
+
+  <div class="main-container">
+    <h2 id="signupTitle">Create an account</h2>
+
+    <div class="row-inputs">
+      <div class="input-group input-group-modal">
+        <label for="firstNameInput" id="firstNameLabel">First name</label>
+        <input type="text" id="firstNameInput" placeholder="Your first name">
+      </div>
+      <div class="input-group input-group-modal">
+        <label for="lastNameInput" id="lastNameLabel">Last name</label>
+        <input type="text" id="lastNameInput" placeholder="Your last name">
+      </div>
+    </div>
+
+    <div class="input-group input-group-modal">
+      <label for="signupEmailInput" id="signupEmailLabel">Email</label>
+      <input type="email" id="signupEmailInput" placeholder="Enter your email">
+    </div>
+
+    <div class="input-group input-group-modal">
+      <label for="signupPasswordInput" id="signupPasswordLabel">Password</label>
+      <input type="password" id="signupPasswordInput" placeholder="Enter a password">
+    </div>
+
+    <div class="checkbox-group">
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="signupCheckbox" />
+      </div>
+      <label for="signupCheckbox" id="signupCheckboxLabel">I agree to the terms</label>
+    </div>
+
+    <div class="button-group">
+      <button class="btn btn-primary" id="createAccountButton">Create account</button>
+    </div>
+
+    <div id="signinPrompt">
+      <p style="text-align:center;">Already have an account? <a href="login.html" id="switchToLogin" class="signup-link">Log in</a></p>
+    </div>
+  </div>
+
+  <script src="scripts/texts.js"></script>
+  <script src="scripts/domains.js"></script>
+  <!-- Поки без логіки -->
+</body>
+</html>

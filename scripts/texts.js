@@ -9,12 +9,14 @@ const pageTexts = {
       continueIndexButton: "Continue"
     },
     confirmJournal: {
+      subHeaderTitle: "Journal Home Lite creation",
       title: "Is this your journal?",
       confirmationText: "I hereby confirm that I work for this journal and have right to claim journal page on their behalf",
       continueConfirmButton: "Log in to claim"
     },
 
     login: {
+      subHeaderTitle: "Journal Home Lite creation",
       loginTitle: "Log in to claim your journal",
       emailLabel: "Email *",
       emailPlaceholder: "Enter your email",
@@ -22,8 +24,10 @@ const pageTexts = {
       passwordPlaceholder: "Enter your password",
       keepLoggedInLabel: "Keep me logged in",
       loginButton: "Log in",
+      googleText: "Continue with Google",
       forgotPasswordHint: '<a href="https://www.researchgate.net/application.LostPassword.html" class="signup-link">Forgot password?</a>',
-      signupPrompt: 'Don’t have an account? <a href="#" class="signup-link" id="switchToSignup">Sign up</a>'
+      signupPrompt: 'Don’t have an account? <a href="#" class="signup-link" id="switchToSignup">Sign up</a>',
+      summaryHeader: "Summary"
     },
     signup: {
       authTitle: "Create your account",

@@ -1,8 +1,8 @@
 const pageTexts = {
     index: {
       subHeaderTitle: "Journal Home Lite creation",
-      title: "Select journal",
-      subtitle: "Select the journal that you want to claim",
+      title: "Select your journal to get started",
+      subtitle: "Enter the ISSN of the journal you want to claim.",
       searchLabel: "Journal *",
       searchPlaceholder: "Enter ISSN",
       searchError: "Select a journal",
@@ -10,14 +10,14 @@ const pageTexts = {
     },
     confirmJournal: {
       subHeaderTitle: "Journal Home Lite creation",
-      title: "Is this your journal?",
-      confirmationText: "I hereby confirm that I work for this journal and have right to claim journal page on their behalf",
-      continueConfirmButton: "Log in to claim"
+      title: "Claim your journal",
+      confirmationText: "I affirm that I am affiliated with this journal and have the authority to register as a business representative.",
+      continueConfirmButton: "Confirm and continue"
     },
 
     login: {
       subHeaderTitle: "Journal Home Lite creation",
-      loginTitle: "Log in to claim your journal",
+      loginTitle: "Log in to continue",
       emailLabel: "Email *",
       emailPlaceholder: "Enter your email",
       passwordLabel: "Password *",
@@ -34,7 +34,7 @@ const pageTexts = {
       signupTitle: "Create your account",
       firstNameLabel: "First name *",
       lastNameLabel: "Last name *",
-      signupEmailLabel: "Journal email *",
+      signupEmailLabel: "Business email *",
       signupEmailHint: "Use your journal email address",
       signupPasswordLabel: "Password *",
       signupCheckboxLabel: "I agree to Business service terms",
@@ -53,15 +53,15 @@ const pageTexts = {
     },
 
     additionalInfo: {
-      title: "Confirm your affiliation with the journal",
-      subtitle: "Provide your business email to help us confirm your affiliation with <b>Nature Sciences</b>",
-      additionalEmailLabel: "Journal email *",
+      title: "Verify your affiliation",
+      subtitle: "Use your work email to confirm your affiliation with <b>Nature Sciences</b>",
+      additionalEmailLabel: "Work email *",
       additionalEmailInput: "Enter your email",
-      additionalEmailHint: "Use your journal email address",
+      additionalEmailHint: "Email should match your journal’s domain (e.g., name@journal.com).",
       infoLabel: "Additional information",
       infoTextarea: "E.g. a link to the journal’s website",
       continueButton: "Continue",
-      infoText: "Provide us with additional information that will help us confirm your affiliation."
+      infoText: "Please provide some information to help verify your affiliation with <b>Nature Sciences.</b>"
     },
 
     checkout: {

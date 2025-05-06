@@ -1,11 +1,8 @@
-// scripts/login.js
-
 document.addEventListener('DOMContentLoaded', function () {
   const loginForm = document.getElementById('loginForm');
   const emailInput = document.getElementById('email');
   const passwordInput = document.getElementById('password');
   const loginButton = document.getElementById('loginButton');
-  const mainContainer = document.querySelector('main');
 
   loginForm.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -33,13 +30,17 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    const domain = email.split('@')[1].toLowerCase();
+    startButtonSpinner(loginButton);
 
-    if (window.recognizedDomains.includes(domain)) {
-      window.location.href = 'checkout.html';
-    } else {
-      renderAdditionalInfoStep();
-    }
+    setTimeout(() => {
+      const domain = email.split('@')[1].toLowerCase();
+
+      if (window.recognizedDomains.includes(domain)) {
+        window.location.href = 'checkout.html';
+      } else {
+        renderAdditionalInfoStep();
+      }
+    }, 1000);
   });
 
   function renderAdditionalInfoStep() {
@@ -114,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
           if (!extraText) {
             additionalInfoTextarea.classList.add('invalid');
           } else {
-            window.location.href = 'checkout.html';
+            showFinalMessageAndRedirect();
           }
         }
       }
@@ -154,7 +155,36 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      window.location.href = 'checkout.html';
+      showFinalMessageAndRedirect();
     });
+  }
+
+  function showFinalMessageAndRedirect() {
+    const container = document.getElementById('log-in-container');
+    container.innerHTML = `
+      <div class="redirect-message">
+        <h1>Thank you for providing additional information</h1>
+        <p>Redirecting to checkout...</p>
+        <div class="spinner-wrapper">
+          <span class="spinner black"></span>
+        </div>
+      </div>
+    `;
+    setTimeout(() => {
+      window.location.href = 'checkout.html';
+    }, 2000);
+  }
+
+  function startButtonSpinner(btn) {
+    if (!btn || btn.disabled) return;
+
+    const fixedWidth = btn.offsetWidth;
+    btn.style.width = fixedWidth + 'px';
+    btn.disabled = true;
+
+    const spinner = document.createElement('span');
+    spinner.className = 'spinner small';
+    btn.innerHTML = '';
+    btn.appendChild(spinner);
   }
 });

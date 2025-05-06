@@ -770,3 +770,13 @@ body[data-page="bussinessPortal"] .bp-button-group {
 #cancelResend {
   margin: 0;
 }
+
+.spinner.black {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(0, 0, 0, 0.2); /* світлі межі */
+  border-top-color: #131314; /* насичено-чорна верхня межа */
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}

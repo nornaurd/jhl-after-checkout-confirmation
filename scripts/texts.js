@@ -83,7 +83,30 @@ const pageTexts = {
       labelState: "State/Province/Region",
       labelPostalCode: "Postal code",
       summaryHeader: "Summary"
+    },
+
+    bussinessPortal: {
+      bpModalHeading: "Welcome to your business portal",
+      bpModalDescription: "This is your dedicated space to enhance your journal's visibility and impact.",
+      bpModalBullets: [
+        "Add your brand",
+        "Detail Your Journal",
+        "Introduce your editorial team"
+      ],
+      bpModalContinueBtn: "Get started",
+    
+      bpBannerHeading: "Confirm your email",
+      bpBannerText: "We’ve sent an email to <b>jane.smith@journal.com.</b> Click the button in the email to activate your account.",
+      bpBannerLink: "I didn’t get the email",
+
+      // --- Модальне вікно "Resend email"
+      resendHeading: "Resend email",
+      resendParagraph: "If you didn’t get the email, check your spam folder or try resending it.",
+      resendEmailValue: "test@journal.com",
+      resendCancelButton: "Cancel",
+      resendSendButton: "Resend email"
     }
+    
     
     
     

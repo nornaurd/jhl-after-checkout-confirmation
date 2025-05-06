@@ -26,7 +26,7 @@ const pageTexts = {
       loginButton: "Log in",
       googleText: "Continue with Google",
       forgotPasswordHint: '<a href="https://www.researchgate.net/application.LostPassword.html" class="signup-link">Forgot password?</a>',
-      signupPrompt: 'Don’t have an account? <a href="/signup.html" class="signup-link" id="switchToSignup">Sign up</a>',
+      signupPrompt: 'Don’t have an account? <a href="/jhl-after-checkout-confirmation/signup.html" class="signup-link" id="switchToSignup">Sign up</a>',
       summaryHeader: "Summary"
     },
     signup: {
@@ -39,7 +39,7 @@ const pageTexts = {
       signupPasswordLabel: "Password *",
       signupCheckboxLabel: "I agree to Business service terms",
       createAccountButton: "Create account",
-      signinPrompt: 'Already have an account? <a href="/login.html" class="signup-link" id="switchToLogin">Sign in</a>'
+      signinPrompt: 'Already have an account? <a href="/jhl-after-checkout-confirmation/login.html" class="signup-link" id="switchToLogin">Sign in</a>'
     },
 
     confirmEmail: {

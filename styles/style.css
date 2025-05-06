@@ -639,3 +639,8 @@ body[data-page="checkout"] .input-group {
 #log-in-container {
   margin-top: 0;
 }
+
+.button-group a.signup-link {
+  align-self: center;
+  line-height: 32px; /* висота кнопки */
+}
